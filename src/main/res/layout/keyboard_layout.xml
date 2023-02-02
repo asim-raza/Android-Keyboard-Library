@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/words_LinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBlack"
+    android:orientation="vertical">
+
+    <com.contactbackup.cloud.keyboard.keyboard.LatinKeyboardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/keyboard"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_1"
+        android:inputType="textCapSentences"
+        android:keyBackground="@drawable/key"
+        android:keyPreviewHeight="40.0dip"
+        android:keyPreviewLayout="@layout/keyboard_key_preview_layout"
+        android:keyTextColor="#ffffffff"
+        android:keyTextSize="25.0sp"
+        android:labelTextSize="18.0sp" />
+</LinearLayout>

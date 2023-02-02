@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="5.0dip"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_adplaceholder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip" />
+
+            <CheckBox
+                android:id="@+id/cb_appinstall"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:checked="true" />
+
+            <CheckBox
+                android:id="@+id/cb_content"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:checked="true" />
+
+            <CheckBox
+                android:id="@+id/cb_start_muted"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:checked="true" />
+
+            <Button
+                android:id="@+id/btn_refresh"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="0.0dip"
+                android:layout_marginTop="0.0dip"
+                android:text="Refresh Ad" />
+
+            <TextView
+                android:id="@+id/tv_video_status"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:text="Video status: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="fill_parent"
+                android:padding="5dp"
+                style="@style/CardView.help"
+                android:layout_height="wrap_content"
+
+                >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/card_view_padding">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2.0dip"
+                        android:layout_marginLeft="5dp"
+                        android:text="Theme Settings"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColor"
+                        android:textSize="14.0sp" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_keyboard_themes"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5.0dip"
+                        android:orientation="horizontal"
+                        android:padding="5.0dip">
+
+                        <ImageView
+                            android:layout_width="25.0dip"
+                            android:layout_height="25.0dip"
+                            android:layout_margin="3.0dip"
+                            android:src="@drawable/ic_themes_settings" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7.0dip"
+                            android:text="Keyboard Themes"
+                            android:textColor="@color/textColor"
+                            android:textSize="20.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_keyboard_photo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5.0dip"
+                        android:orientation="horizontal"
+                        android:padding="5.0dip">
+
+                        <ImageView
+                            android:layout_width="25.0dip"
+                            android:layout_height="22dp"
+                            android:layout_margin="3.0dip"
+                            android:src="@drawable/ic_themes_settings" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7.0dip"
+                            android:text="Choose Your Photo"
+                            android:textColor="@color/textColor"
+                            android:textSize="20.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                style="@style/CardView.help"
+                android:layout_marginTop="8.0dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/card_view_padding"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:text="User Dictionary"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColor"
+                        android:textSize="14.0sp" />
+
+                    <Switch
+                        android:id="@+id/switch_show_suggestions"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:text="Show Suggestions"
+                        android:textColor="@color/textColor"
+                        android:textSize="17.0sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                style="@style/CardView.help"
+                android:layout_marginTop="8.0dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/card_view_padding">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:text="Sounds And Vibration"
+                        android:textColor="@color/textColor"
+                        android:textSize="14.0sp" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_key_sound"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5.0dip"
+                        android:orientation="horizontal"
+                        android:padding="5.0dip">
+
+                        <ImageView
+                            android:layout_width="25.0dip"
+                            android:layout_height="25.0dip"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginTop="3.0dip"
+                            android:src="@drawable/ic_speaker_settings" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:text="Sounds Library"
+                            android:textColor="@color/textColor"
+                            android:textSize="20.0sp" />
+                    </LinearLayout>
+
+                    <Switch
+                        android:id="@+id/switch_key_sound"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="15.0dip"
+                        android:text="Key Sounds"
+                        android:textColor="@color/textColor"
+                        android:textSize="17.0sp" />
+
+                    <Switch
+                        android:id="@+id/switch_key_vibration"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:text="Key Vibration"
+                        android:textColor="@color/textColor"
+                        android:textSize="17.0sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="fill_parent"
+                android:padding="5dp"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                style="@style/CardView.help"
+                android:layout_marginTop="8.0dip"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/card_view_padding">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Help"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColor"
+                        android:textSize="14.0sp" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_privacy"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5.0dip"
+                        android:orientation="horizontal"
+                        android:padding="5.0dip">
+
+                        <ImageView
+                            android:layout_width="25.0dip"
+                            android:layout_height="25.0dip"
+                            android:layout_marginTop="5.0dip"
+                            android:src="@drawable/ic_help_settings" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginTop="3.0dip"
+                            android:text="Privacy Policy"
+                            android:textColor="@color/textColor"
+                            android:textSize="20.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_help"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5.0dip"
+                        android:orientation="horizontal"
+                        android:padding="5.0dip">
+
+                        <ImageView
+                            android:layout_width="25.0dip"
+                            android:layout_height="25.0dip"
+                            android:layout_marginTop="3.0dip"
+                            android:src="@drawable/ic_privacy_settings" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginTop="0.0dip"
+                            android:text="How Can We Use It"
+                            android:textColor="@color/textColor"
+                            android:textSize="20.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
