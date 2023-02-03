@@ -1,38 +1,21 @@
-//plugins {
-//    id 'com.android.application'
-//}
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
 
-android {
-    namespace 'com.maxcodestudio.keyboard.lib'
-    compileSdk 33
+group 'com.int'
+version '1.0-SNAPSHOT'
 
-    defaultConfig {
-        applicationId "com.maxcodestudio.keyboard.lib"
-        minSdk 21
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
+sourceCompatibility = 1.8
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
 
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            mavenJava(MavenPublication) {
+                from components.java
+            }
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
 }
 
-dependencies {
-
-    implementation 'androidx.appcompat:appcompat:1.6.0'
-    implementation 'com.google.android.material:material:1.8.0'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-}
