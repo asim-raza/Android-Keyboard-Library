@@ -1,0 +1,285 @@
+
+plugins {
+    id 'com.android.application'
+}
+//buildscript {
+//    repositories {
+//        maven { url 'https://maven.fabric.io/public' }
+//    }
+//
+//    dependencies {
+//        classpath 'io.fabric.tools:gradle:1.+'
+//    }
+//}
+//
+//
+//
+////apply plugin: 'com.android.application'
+////apply plugin: 'io.fabric'
+//
+//repositories {
+//    maven { url 'https://maven.fabric.io/public' }
+//}
+//
+
+android {
+    compileSdkVersion 32
+    defaultConfig {
+        applicationId "com.keyboard.marvyapps"
+        minSdkVersion 23
+        targetSdkVersion 32
+        versionCode 10
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "version"
+    productFlavors {
+        arabic {
+            dimension "version"
+            applicationId 'com.keyboardcoach.arabickeyboard.arabic.language'
+        }
+        bangla {
+            dimension "version"
+            applicationId "com.keyboardcoach.banglakeyboard.bangla.language"
+        }
+//        brazilian {
+//        dimension "version"
+//            applicationId 'com.keyboardcoach.braziliankeyboard.brazilian.language'
+//        }
+//        bulgarian {
+//        dimension "version"
+//            applicationId 'com.keyboardcoach.bulgariankeyboard.bulgarian.language'
+//        }
+//        catalan {
+//        dimension "version"
+//            applicationId 'com.keyboardcoach.catalankeyboard.catalan.language'
+//        }
+        chinese {
+            dimension "version"
+            applicationId 'com.keyboardcoach.chinesekeyboard.chinese.language'
+        }
+        croatian {
+            dimension "version"
+            applicationId 'com.keyboardcoach.croatiankeyboard.croatian.language'
+        }
+        czech {
+            dimension "version"
+            applicationId 'com.keyboardcoach.czechkeyboard.czech.language'
+        }
+//        filipino {
+//        dimension "version"
+//            applicationId 'com.keyboardcoach.filipinokeyboard.filipino.language'
+//        }
+        french {
+            dimension "version"
+            applicationId "com.keyboardcoach.frenchkeyboard.french.language"
+        }
+        georgian {
+            dimension "version"
+            applicationId 'com.keyboardcoach.georgiankeyboard.georgian.language'
+        }
+        german {
+            dimension "version"
+            applicationId "com.keyboardcoach.germankeyboard.german.language"
+        }
+        greek {
+            dimension "version"
+            applicationId "com.keyboardcoach.greekkeyboard.greek.language"
+        }
+        gujrati {
+            dimension "version"
+            applicationId 'com.keyboardcoach.gujratikeyboard.gujrati.language'
+        }
+        hebrew {
+            dimension "version"
+            applicationId "com.keyboardcoach.hebrewkeyboard.hebrew.language"
+        }
+        hindi {
+            dimension "version"
+            applicationId 'com.keyboardcoach.hindikeyboard.hindi.language'
+        }
+        hungarian {
+            dimension "version"
+            applicationId 'com.keyboardcoach.hungariankeyboard.hungarian.language'
+        }
+        indonesian {
+            dimension "version"
+            applicationId "com.keyboardcoach.indonesiankeyboard.indonesian.language"
+        }
+        italian {
+            dimension "version"
+            applicationId "com.keyboardcoach.italiankeyboard.italian.language"
+        }
+        japanese {
+            dimension "version"
+            applicationId "com.keyboardcoach.japanesekeyboard.japanese.language"
+        }
+        korean {
+            dimension "version"
+            applicationId "com.keyboardcoach.koreankeyboard.korean.language"
+        }
+        kurdish {
+            dimension "version"
+            applicationId "com.keyboardcoach.kurdishkeyboard.kurdish.language"
+        }
+//        lithuanian {
+//            dimension "version"
+//            applicationId "com.keyboardcoach.lithuaniankeyboard.lithuanian.language"
+//        }
+        malayalam {
+            dimension "version"
+            applicationId "com.keyboardcoach.malayalamkeyboard.malayalam.language"
+        }
+//        marathi {
+//            dimension "version"
+//            applicationId "com.keyboardcoach.marathikeyboard.marathi.language"
+//        }
+        myanmar {
+            dimension "version"
+            applicationId "com.keyboardcoach.myanmarkeyboard.myanmar.language2020"
+        }
+        nepali {
+            dimension "version"
+            applicationId "com.keyboardcoach.nepalikeyboard.nepali.language"
+        }
+        norwegian {
+            dimension "version"
+            applicationId "com.keyboardcoach.norwegiankeyboard.norwegian.language"
+        }
+        oriya {
+            dimension "version"
+            applicationId "com.keyboardcoach.oriyakeyboard.oriya.language"
+        }
+        pashto {
+            dimension "version"
+            applicationId "com.keyboardcoach.pashtokeyboard.pashto.language"
+        }
+        polish {
+            dimension "version"
+            applicationId "com.keyboardcoach.polishkeyboard.polish.language"
+        }
+        portuguese {
+            dimension "version"
+            applicationId "com.keyboardcoach.portuguesekeyboard.portuguese.language"
+        }
+        romanian {
+            dimension "version"
+            applicationId "com.keyboardcoach.romaniankeyboard.romanian.language"
+        }
+        russian {
+            dimension "version"
+            applicationId "com.keyboardcoach.russiankeyboard.russian.language"
+        }
+        slovak {
+            dimension "version"
+            applicationId "com.keyboardcoach.sloveniankeyboard.slovak.language"
+        }
+        slovenian {
+            dimension "version"
+            applicationId "com.keyboardcoach." + "slovenian" + "keyboard.slovenian.language"
+        }
+        spanish {
+            dimension "version"
+            applicationId "com.keyboardcoach.spanishkeyboard.spanish.language"
+        }
+        swedish {
+            dimension "version"
+            applicationId "com.keyboardcoach." + "swedish" + "keyboard.swedish.language"
+        }
+        tamil {
+            dimension "version"
+            applicationId "com.keyboardcoach." + "tamil" + "keyboard.tamil.language"
+        }
+//        telugu {
+//            dimension "version"
+//            applicationId "com.keyboardcoach." + "telugu" + "keyboard.telugu.language"
+//        }
+        thai {
+            dimension "version"
+            applicationId "com.keyboardcoach.thaikeyboard.thai.language"
+        }
+        turkish {
+            dimension "version"
+            applicationId "com.keyboardcoach.turkishkeyboard.turkish.language"
+        }
+        ukrainian {
+            dimension "version"
+            applicationId "com.keyboardcoach." + "ukrainian" + "keyboard.ukrainian.language"
+        }
+        urdu {
+            dimension "version"
+            applicationId "com.keyboardcoach." + "urdu" + "keyboard.urdu.language"
+        }
+        vietnamese {
+            dimension "version"
+            applicationId "com.keyboardcoach." + "vietnamese" + "keyboard.vietnamese.language"
+        }
+    }
+}
+
+dependencies {
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    implementation project(':lib')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:+'
+    implementation 'com.android.support:design:+'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-vector-drawable:+'
+    implementation project(path: ':keyboard')
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:multidex:1.0.3'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //    Amination Dependencies
+//    implementation 'com.android.support:support-compat:28.0.0'
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+
+    //Responsive
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.android.support:cardview-v7:+'
+
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+
+//    implementation 'com.google.firebase:firebase-ads:18.1.0'
+    //implementation 'com.google.android.gms:play-services-ads:17.2.1'
+    implementation 'com.google.android.gms:play-services-ads:16.0.0'
+
+//    implementation 'com.theartofdev.edmodo:android-image-cropper:2.4.7'
+
+//    implementation('com.crashlytics.sdk.android:crashlytics:17.2.2@aar') {
+//        transitive = true;
+//    }
+//    implementation('com.crashlytics.sdk.android:crashlytics-ndk:17.2.2@aar') {
+//        transitive = true;
+//    }
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+
+
+}
+
+//crashlytics {
+//    enableNdk true
+//    androidNdkOut 'src/main/obj'
+//    androidNdkLibsOut 'src/main/libs'
+//}
+
+def getDate() {
+    return new Date().format('yyyyMMddHHmmss')
+}

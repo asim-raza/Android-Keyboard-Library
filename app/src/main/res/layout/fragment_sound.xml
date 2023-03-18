@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10.0dip"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/text_android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/ic_play_sound"
+                android:text="Android Default"
+                android:textColor="@color/textColor"
+                android:textSize="18.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@color/textColor" />
+
+            <TextView
+                android:id="@+id/text_samsung"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:text="Samsung Default"
+                android:textColor="@color/textColor"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/ic_play_sound"
+                android:textSize="18.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@color/textColor" />
+
+            <TextView
+                android:id="@+id/text_iphone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:text="IPhone Default"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/ic_play_sound"
+                android:textColor="@color/textColor"
+                android:textSize="18.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@color/textColor" />
+
+            <TextView
+                android:id="@+id/text_wood"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:text="Wood"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/ic_play_sound"
+                android:textColor="@color/textColor"
+                android:textSize="18.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@color/textColor" />
+
+            <TextView
+                android:id="@+id/text_water"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:text="Water Tip"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/ic_play_sound"
+                android:textColor="@color/textColor"
+                android:textSize="18.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@color/textColor" />
+
+            <TextView
+                android:id="@+id/text_hard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:text="Hard Hit"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/ic_play_sound"
+                android:textColor="@color/textColor"
+                android:textSize="18.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@color/textColor" />
+
+            <TextView
+                android:id="@+id/text_typewriter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:text="Typewriter Sound"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/ic_play_sound"
+                android:textColor="@color/textColor"
+                android:textSize="18.0sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@color/textColor" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tap to select"
+        android:textColor="@color/textColor"
+        android:textStyle="bold" />
+
+</LinearLayout>

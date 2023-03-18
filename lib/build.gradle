@@ -1,0 +1,23 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 31
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 31
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+//    implementation 'com.android.support:support-v4:31.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+}
